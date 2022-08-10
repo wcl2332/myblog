@@ -1,0 +1,38 @@
+server:
+  port: 8081
+spring:
+  #连接池
+  datasource:
+    druid:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+      username: root
+      password: root
+  redis:
+    port: 6379
+    password: 976072wcl
+    host: 101.34.208.40
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    root: info
+
+# PageHelper分页插件
+pagehelper:
+  #指定分页插件使用哪种方言，支持：oracle,mysql,mariadb,sqlite,hsqldb,postgresql,db2,informix,h2,derby。。。
+  helperDialect: mysql
+  # pageNum<=0 时会查第一页， pageNum>pages（超过总数时），会查最后一页
+  reasonable: true
+  # 支持通过 Mapper 接口参数来传递分页参数，默认值false
+  supportMethodsArguments: true
+  # 为了支持startPage(Object params)方法，增加了该参数来配置参数映射，用于从对象中根据属性名取值
+  params: count=countSql

@@ -1,0 +1,378 @@
+2022-03-04 10:18:42.326 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 55 ] - Starting MyblogApplication using Java 1.8.0_60 on DESKTOP-VI456TF with PID 16568 (D:\Code\Pobject\study\myblog\target\classes started by Wangchenglong in D:\Code\Pobject\study\myblog)
+2022-03-04 10:18:42.328 [ restartedMain ] - [ DEBUG ] [ com.wangcl.myblog.MyblogApplication : 56 ] - Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-03-04 10:18:42.328 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 641 ] - The following profiles are active: dev
+2022-03-04 10:18:42.969 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 109 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-03-04 10:18:42.971 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\ArticleMapper.class]
+2022-03-04 10:18:42.971 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\UserMapper.class]
+2022-03-04 10:18:42.972 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'articleMapper' and 'com.wangcl.myblog.mapper.ArticleMapper' mapperInterface
+2022-03-04 10:18:42.973 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'articleMapper'.
+2022-03-04 10:18:42.973 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userMapper' and 'com.wangcl.myblog.mapper.UserMapper' mapperInterface
+2022-03-04 10:18:42.974 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2022-03-04 10:18:43.302 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:18:43.303 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-04 10:18:43.303 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-04 10:18:43.357 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-04 10:18:43.418 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2022-03-04 10:18:43.539 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 990 ] - {dataSource-1} inited
+2022-03-04 10:18:43.574 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@351dd569'
+2022-03-04 10:18:43.680 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\ArticleMapper.xml]'
+2022-03-04 10:18:43.704 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\UserMapper.xml]'
+2022-03-04 10:18:44.073 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.ArticleController:
+	{GET [/api/article/list/{pageNum}]}: getArticleList(Integer)
+2022-03-04 10:18:44.076 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.LoginController:
+	{POST [/login]}: login(LoginParms)
+2022-03-04 10:18:44.077 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.RegisterController:
+	{POST [/register]}: register(RegisterParms)
+2022-03-04 10:18:44.077 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.UserController:
+	{GET [/user/getUserInfo/{id}]}: getUserInfo(String)
+2022-03-04 10:18:44.079 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-03-04 10:18:44.092 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 86 ] - 'beanNameHandlerMapping' {}
+2022-03-04 10:18:44.102 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 177 ] - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2022-03-04 10:18:44.168 [ restartedMain ] - [ DEBUG ] [ i.n.util.internal.logging.InternalLoggerFactory : 63 ] - Using SLF4J as the default logging framework
+2022-03-04 10:18:44.169 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.AddressResolverGroupProvider : 37 ] - Starting without optional netty's non-blocking DNS resolver library
+2022-03-04 10:18:44.171 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 122 ] - -Dio.netty.eventLoopThreads: 8
+2022-03-04 10:18:44.176 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.DefaultEventLoopGroupProvider : 231 ] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-03-04 10:18:44.189 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 86 ] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-03-04 10:18:44.189 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 89 ] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-03-04 10:18:44.192 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 129 ] - -Dio.netty.leakDetection.level: simple
+2022-03-04 10:18:44.192 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 130 ] - -Dio.netty.leakDetection.targetRecords: 4
+2022-03-04 10:18:44.194 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetectorFactory : 196 ] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3b7d34a
+2022-03-04 10:18:44.198 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 460 ] - -Dio.netty.noUnsafe: false
+2022-03-04 10:18:44.198 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 954 ] - Java version: 8
+2022-03-04 10:18:44.199 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 135 ] - sun.misc.Unsafe.theUnsafe: available
+2022-03-04 10:18:44.199 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 159 ] - sun.misc.Unsafe.copyMemory: available
+2022-03-04 10:18:44.200 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 202 ] - java.nio.Buffer.address: available
+2022-03-04 10:18:44.200 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 272 ] - direct buffer constructor: available
+2022-03-04 10:18:44.201 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 350 ] - java.nio.Bits.unaligned: available, true
+2022-03-04 10:18:44.201 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 424 ] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-03-04 10:18:44.201 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 446 ] - java.nio.DirectByteBuffer.<init>(long, int): available
+2022-03-04 10:18:44.201 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1116 ] - sun.misc.Unsafe: available
+2022-03-04 10:18:44.201 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1237 ] - -Dio.netty.tmpdir: C:\Users\WANGCH~1\AppData\Local\Temp (java.io.tmpdir)
+2022-03-04 10:18:44.201 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1316 ] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-03-04 10:18:44.202 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1076 ] - Platform: Windows
+2022-03-04 10:18:44.202 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 178 ] - -Dio.netty.maxDirectMemory: 3779067904 bytes
+2022-03-04 10:18:44.202 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 185 ] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-03-04 10:18:44.203 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.CleanerJava6 : 92 ] - java.nio.ByteBuffer.cleaner(): available
+2022-03-04 10:18:44.203 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 205 ] - -Dio.netty.noPreferDirect: false
+2022-03-04 10:18:44.204 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 967 ] - org.jctools-core.MpscChunkedArrayQueue: available
+2022-03-04 10:18:44.212 [ restartedMain ] - [ DEBUG ] [ reactor.util.Loggers : 245 ] - Using Slf4j logging framework
+2022-03-04 10:18:44.215 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.event.jfr.EventRecorderHolder : 55 ] - Starting without optional JFR support. JFR unavailable.
+2022-03-04 10:18:44.228 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 227 ] - LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-03-04 10:18:44.420 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:18:44.447 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 61 ] - Started MyblogApplication in 2.48 seconds (JVM running for 3.196)
+2022-03-04 10:18:55.772 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-04 10:18:55.828 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2022-03-04 10:18:55.835 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb59e26] was not registered for synchronization because synchronization is not active
+2022-03-04 10:18:55.953 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2e73a67b] will not be managed by Spring
+2022-03-04 10:18:55.956 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - ==>  Preparing: SELECT COUNT(*) AS total FROM article
+2022-03-04 10:18:55.973 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - ==> Parameters: 
+2022-03-04 10:18:55.989 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - <==      Total: 1
+2022-03-04 10:18:55.995 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - ==>  Preparing: SELECT id,title,content,create_time,update_time,cover_image,category_id,tag_id,weight,comment_counts,readcount,author_id,introduction FROM article LIMIT ?
+2022-03-04 10:18:55.996 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - ==> Parameters: 10(Long)
+2022-03-04 10:18:55.998 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - <==      Total: 1
+2022-03-04 10:18:55.999 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb59e26]
+2022-03-04 10:20:37.160 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 55 ] - Starting MyblogApplication using Java 1.8.0_60 on DESKTOP-VI456TF with PID 13196 (D:\Code\Pobject\study\myblog\target\classes started by Wangchenglong in D:\Code\Pobject\study\myblog)
+2022-03-04 10:20:37.162 [ restartedMain ] - [ DEBUG ] [ com.wangcl.myblog.MyblogApplication : 56 ] - Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-03-04 10:20:37.162 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 641 ] - The following profiles are active: dev
+2022-03-04 10:20:37.810 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 109 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-03-04 10:20:37.812 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\ArticleMapper.class]
+2022-03-04 10:20:37.812 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\UserMapper.class]
+2022-03-04 10:20:37.814 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'articleMapper' and 'com.wangcl.myblog.mapper.ArticleMapper' mapperInterface
+2022-03-04 10:20:37.815 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'articleMapper'.
+2022-03-04 10:20:37.815 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userMapper' and 'com.wangcl.myblog.mapper.UserMapper' mapperInterface
+2022-03-04 10:20:37.816 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2022-03-04 10:20:38.232 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:20:38.233 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-04 10:20:38.233 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-04 10:20:38.284 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-04 10:20:38.347 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2022-03-04 10:20:38.478 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 990 ] - {dataSource-1} inited
+2022-03-04 10:20:38.514 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@7ba12ff2'
+2022-03-04 10:20:38.624 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\ArticleMapper.xml]'
+2022-03-04 10:20:38.650 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\UserMapper.xml]'
+2022-03-04 10:20:39.039 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.ArticleController:
+	{GET [/api/article/list/{pageNum}]}: getArticleList(Integer)
+2022-03-04 10:20:39.041 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.LoginController:
+	{POST [/login]}: login(LoginParms)
+2022-03-04 10:20:39.042 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.RegisterController:
+	{POST [/register]}: register(RegisterParms)
+2022-03-04 10:20:39.043 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.UserController:
+	{GET [/user/getUserInfo/{id}]}: getUserInfo(String)
+2022-03-04 10:20:39.044 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-03-04 10:20:39.057 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 86 ] - 'beanNameHandlerMapping' {}
+2022-03-04 10:20:39.068 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 177 ] - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2022-03-04 10:20:39.132 [ restartedMain ] - [ DEBUG ] [ i.n.util.internal.logging.InternalLoggerFactory : 63 ] - Using SLF4J as the default logging framework
+2022-03-04 10:20:39.133 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.AddressResolverGroupProvider : 37 ] - Starting without optional netty's non-blocking DNS resolver library
+2022-03-04 10:20:39.135 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 122 ] - -Dio.netty.eventLoopThreads: 8
+2022-03-04 10:20:39.140 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.DefaultEventLoopGroupProvider : 231 ] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-03-04 10:20:39.152 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 86 ] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-03-04 10:20:39.153 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 89 ] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-03-04 10:20:39.156 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 129 ] - -Dio.netty.leakDetection.level: simple
+2022-03-04 10:20:39.156 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 130 ] - -Dio.netty.leakDetection.targetRecords: 4
+2022-03-04 10:20:39.157 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetectorFactory : 196 ] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@31f0afc
+2022-03-04 10:20:39.160 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 460 ] - -Dio.netty.noUnsafe: false
+2022-03-04 10:20:39.160 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 954 ] - Java version: 8
+2022-03-04 10:20:39.160 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 135 ] - sun.misc.Unsafe.theUnsafe: available
+2022-03-04 10:20:39.161 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 159 ] - sun.misc.Unsafe.copyMemory: available
+2022-03-04 10:20:39.162 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 202 ] - java.nio.Buffer.address: available
+2022-03-04 10:20:39.163 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 272 ] - direct buffer constructor: available
+2022-03-04 10:20:39.163 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 350 ] - java.nio.Bits.unaligned: available, true
+2022-03-04 10:20:39.163 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 424 ] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-03-04 10:20:39.164 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 446 ] - java.nio.DirectByteBuffer.<init>(long, int): available
+2022-03-04 10:20:39.164 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1116 ] - sun.misc.Unsafe: available
+2022-03-04 10:20:39.165 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1237 ] - -Dio.netty.tmpdir: C:\Users\WANGCH~1\AppData\Local\Temp (java.io.tmpdir)
+2022-03-04 10:20:39.165 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1316 ] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-03-04 10:20:39.165 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1076 ] - Platform: Windows
+2022-03-04 10:20:39.166 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 178 ] - -Dio.netty.maxDirectMemory: 3779067904 bytes
+2022-03-04 10:20:39.166 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 185 ] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-03-04 10:20:39.167 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.CleanerJava6 : 92 ] - java.nio.ByteBuffer.cleaner(): available
+2022-03-04 10:20:39.167 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 205 ] - -Dio.netty.noPreferDirect: false
+2022-03-04 10:20:39.168 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 967 ] - org.jctools-core.MpscChunkedArrayQueue: available
+2022-03-04 10:20:39.175 [ restartedMain ] - [ DEBUG ] [ reactor.util.Loggers : 245 ] - Using Slf4j logging framework
+2022-03-04 10:20:39.177 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.event.jfr.EventRecorderHolder : 55 ] - Starting without optional JFR support. JFR unavailable.
+2022-03-04 10:20:39.192 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 227 ] - LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-03-04 10:20:39.391 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:20:39.418 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 61 ] - Started MyblogApplication in 2.584 seconds (JVM running for 3.275)
+2022-03-04 10:20:44.114 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 55 ] - Starting MyblogApplication using Java 1.8.0_60 on DESKTOP-VI456TF with PID 13592 (D:\Code\Pobject\study\myblog\target\classes started by Wangchenglong in D:\Code\Pobject\study\myblog)
+2022-03-04 10:20:44.116 [ restartedMain ] - [ DEBUG ] [ com.wangcl.myblog.MyblogApplication : 56 ] - Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-03-04 10:20:44.116 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 641 ] - The following profiles are active: dev
+2022-03-04 10:20:44.726 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 109 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-03-04 10:20:44.728 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\ArticleMapper.class]
+2022-03-04 10:20:44.728 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\UserMapper.class]
+2022-03-04 10:20:44.730 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'articleMapper' and 'com.wangcl.myblog.mapper.ArticleMapper' mapperInterface
+2022-03-04 10:20:44.732 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'articleMapper'.
+2022-03-04 10:20:44.732 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userMapper' and 'com.wangcl.myblog.mapper.UserMapper' mapperInterface
+2022-03-04 10:20:44.732 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2022-03-04 10:20:45.052 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:20:45.053 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-04 10:20:45.053 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-04 10:20:45.109 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-04 10:20:45.166 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2022-03-04 10:20:45.286 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 990 ] - {dataSource-1} inited
+2022-03-04 10:20:45.321 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@7c7926d2'
+2022-03-04 10:20:45.428 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\ArticleMapper.xml]'
+2022-03-04 10:20:45.451 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\UserMapper.xml]'
+2022-03-04 10:20:45.818 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.ArticleController:
+	{GET [/api/article/list/{pageNum}]}: getArticleList(Integer)
+2022-03-04 10:20:45.820 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.LoginController:
+	{POST [/login]}: login(LoginParms)
+2022-03-04 10:20:45.821 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.RegisterController:
+	{POST [/register]}: register(RegisterParms)
+2022-03-04 10:20:45.821 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.UserController:
+	{GET [/user/getUserInfo/{id}]}: getUserInfo(String)
+2022-03-04 10:20:45.823 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-03-04 10:20:45.835 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 86 ] - 'beanNameHandlerMapping' {}
+2022-03-04 10:20:45.843 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 177 ] - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2022-03-04 10:20:45.907 [ restartedMain ] - [ DEBUG ] [ i.n.util.internal.logging.InternalLoggerFactory : 63 ] - Using SLF4J as the default logging framework
+2022-03-04 10:20:45.910 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.AddressResolverGroupProvider : 37 ] - Starting without optional netty's non-blocking DNS resolver library
+2022-03-04 10:20:45.912 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 122 ] - -Dio.netty.eventLoopThreads: 8
+2022-03-04 10:20:45.917 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.DefaultEventLoopGroupProvider : 231 ] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-03-04 10:20:45.929 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 86 ] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-03-04 10:20:45.930 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 89 ] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-03-04 10:20:45.933 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 129 ] - -Dio.netty.leakDetection.level: simple
+2022-03-04 10:20:45.933 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 130 ] - -Dio.netty.leakDetection.targetRecords: 4
+2022-03-04 10:20:45.934 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetectorFactory : 196 ] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@28776874
+2022-03-04 10:20:45.937 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 460 ] - -Dio.netty.noUnsafe: false
+2022-03-04 10:20:45.937 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 954 ] - Java version: 8
+2022-03-04 10:20:45.938 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 135 ] - sun.misc.Unsafe.theUnsafe: available
+2022-03-04 10:20:45.939 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 159 ] - sun.misc.Unsafe.copyMemory: available
+2022-03-04 10:20:45.939 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 202 ] - java.nio.Buffer.address: available
+2022-03-04 10:20:45.939 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 272 ] - direct buffer constructor: available
+2022-03-04 10:20:45.940 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 350 ] - java.nio.Bits.unaligned: available, true
+2022-03-04 10:20:45.940 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 424 ] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-03-04 10:20:45.940 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 446 ] - java.nio.DirectByteBuffer.<init>(long, int): available
+2022-03-04 10:20:45.940 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1116 ] - sun.misc.Unsafe: available
+2022-03-04 10:20:45.940 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1237 ] - -Dio.netty.tmpdir: C:\Users\WANGCH~1\AppData\Local\Temp (java.io.tmpdir)
+2022-03-04 10:20:45.941 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1316 ] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-03-04 10:20:45.941 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1076 ] - Platform: Windows
+2022-03-04 10:20:45.942 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 178 ] - -Dio.netty.maxDirectMemory: 3779067904 bytes
+2022-03-04 10:20:45.942 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 185 ] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-03-04 10:20:45.943 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.CleanerJava6 : 92 ] - java.nio.ByteBuffer.cleaner(): available
+2022-03-04 10:20:45.943 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 205 ] - -Dio.netty.noPreferDirect: false
+2022-03-04 10:20:45.944 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 967 ] - org.jctools-core.MpscChunkedArrayQueue: available
+2022-03-04 10:20:45.952 [ restartedMain ] - [ DEBUG ] [ reactor.util.Loggers : 245 ] - Using Slf4j logging framework
+2022-03-04 10:20:45.954 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.event.jfr.EventRecorderHolder : 55 ] - Starting without optional JFR support. JFR unavailable.
+2022-03-04 10:20:45.967 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 227 ] - LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-03-04 10:20:46.155 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:20:46.182 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 61 ] - Started MyblogApplication in 2.402 seconds (JVM running for 3.164)
+2022-03-04 10:21:38.735 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 55 ] - Starting MyblogApplication using Java 1.8.0_60 on DESKTOP-VI456TF with PID 2032 (D:\Code\Pobject\study\myblog\target\classes started by Wangchenglong in D:\Code\Pobject\study\myblog)
+2022-03-04 10:21:38.737 [ restartedMain ] - [ DEBUG ] [ com.wangcl.myblog.MyblogApplication : 56 ] - Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-03-04 10:21:38.737 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 641 ] - The following profiles are active: dev
+2022-03-04 10:21:39.359 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 109 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-03-04 10:21:39.360 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\ArticleMapper.class]
+2022-03-04 10:21:39.361 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\UserMapper.class]
+2022-03-04 10:21:39.362 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'articleMapper' and 'com.wangcl.myblog.mapper.ArticleMapper' mapperInterface
+2022-03-04 10:21:39.363 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'articleMapper'.
+2022-03-04 10:21:39.363 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userMapper' and 'com.wangcl.myblog.mapper.UserMapper' mapperInterface
+2022-03-04 10:21:39.364 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2022-03-04 10:21:39.692 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:21:39.692 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-04 10:21:39.692 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-04 10:21:39.745 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-04 10:21:39.808 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2022-03-04 10:21:39.923 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 990 ] - {dataSource-1} inited
+2022-03-04 10:21:39.956 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@7c7926d2'
+2022-03-04 10:21:40.060 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\ArticleMapper.xml]'
+2022-03-04 10:21:40.083 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\UserMapper.xml]'
+2022-03-04 10:21:40.446 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.ArticleController:
+	{GET [/api/article/list/{pageNum}]}: getArticleList(Integer)
+2022-03-04 10:21:40.448 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.LoginController:
+	{POST [/login]}: login(LoginParms)
+2022-03-04 10:21:40.449 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.RegisterController:
+	{POST [/register]}: register(RegisterParms)
+2022-03-04 10:21:40.449 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.UserController:
+	{GET [/user/getUserInfo/{id}]}: getUserInfo(String)
+2022-03-04 10:21:40.451 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-03-04 10:21:40.464 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 86 ] - 'beanNameHandlerMapping' {}
+2022-03-04 10:21:40.473 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 177 ] - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2022-03-04 10:21:40.537 [ restartedMain ] - [ DEBUG ] [ i.n.util.internal.logging.InternalLoggerFactory : 63 ] - Using SLF4J as the default logging framework
+2022-03-04 10:21:40.539 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.AddressResolverGroupProvider : 37 ] - Starting without optional netty's non-blocking DNS resolver library
+2022-03-04 10:21:40.541 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 122 ] - -Dio.netty.eventLoopThreads: 8
+2022-03-04 10:21:40.546 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.DefaultEventLoopGroupProvider : 231 ] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-03-04 10:21:40.557 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 86 ] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-03-04 10:21:40.558 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 89 ] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-03-04 10:21:40.561 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 129 ] - -Dio.netty.leakDetection.level: simple
+2022-03-04 10:21:40.561 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 130 ] - -Dio.netty.leakDetection.targetRecords: 4
+2022-03-04 10:21:40.562 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetectorFactory : 196 ] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@28776874
+2022-03-04 10:21:40.565 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 460 ] - -Dio.netty.noUnsafe: false
+2022-03-04 10:21:40.565 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 954 ] - Java version: 8
+2022-03-04 10:21:40.566 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 135 ] - sun.misc.Unsafe.theUnsafe: available
+2022-03-04 10:21:40.566 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 159 ] - sun.misc.Unsafe.copyMemory: available
+2022-03-04 10:21:40.567 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 202 ] - java.nio.Buffer.address: available
+2022-03-04 10:21:40.567 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 272 ] - direct buffer constructor: available
+2022-03-04 10:21:40.567 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 350 ] - java.nio.Bits.unaligned: available, true
+2022-03-04 10:21:40.567 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 424 ] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-03-04 10:21:40.568 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 446 ] - java.nio.DirectByteBuffer.<init>(long, int): available
+2022-03-04 10:21:40.568 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1116 ] - sun.misc.Unsafe: available
+2022-03-04 10:21:40.568 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1237 ] - -Dio.netty.tmpdir: C:\Users\WANGCH~1\AppData\Local\Temp (java.io.tmpdir)
+2022-03-04 10:21:40.568 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1316 ] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-03-04 10:21:40.568 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1076 ] - Platform: Windows
+2022-03-04 10:21:40.569 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 178 ] - -Dio.netty.maxDirectMemory: 3779067904 bytes
+2022-03-04 10:21:40.569 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 185 ] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-03-04 10:21:40.570 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.CleanerJava6 : 92 ] - java.nio.ByteBuffer.cleaner(): available
+2022-03-04 10:21:40.570 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 205 ] - -Dio.netty.noPreferDirect: false
+2022-03-04 10:21:40.571 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 967 ] - org.jctools-core.MpscChunkedArrayQueue: available
+2022-03-04 10:21:40.578 [ restartedMain ] - [ DEBUG ] [ reactor.util.Loggers : 245 ] - Using Slf4j logging framework
+2022-03-04 10:21:40.580 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.event.jfr.EventRecorderHolder : 55 ] - Starting without optional JFR support. JFR unavailable.
+2022-03-04 10:21:40.594 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 227 ] - LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-03-04 10:21:40.787 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:21:40.811 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 61 ] - Started MyblogApplication in 2.39 seconds (JVM running for 3.176)
+2022-03-04 10:22:12.441 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-04 10:22:12.475 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2022-03-04 10:22:12.479 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b94cf61] was not registered for synchronization because synchronization is not active
+2022-03-04 10:22:12.588 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4e5aa2a5] will not be managed by Spring
+2022-03-04 10:22:12.592 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - ==>  Preparing: SELECT COUNT(*) AS total FROM article
+2022-03-04 10:22:12.607 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - ==> Parameters: 
+2022-03-04 10:22:12.623 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - <==      Total: 1
+2022-03-04 10:22:12.627 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - ==>  Preparing: SELECT id,title,content,create_time,update_time,cover_image,category_id,tag_id,weight,comment_counts,readcount,author_id,introduction FROM article LIMIT ?
+2022-03-04 10:22:12.628 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - ==> Parameters: 10(Long)
+2022-03-04 10:22:12.630 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - <==      Total: 1
+2022-03-04 10:22:12.631 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b94cf61]
+2022-03-04 10:26:54.455 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 55 ] - Starting MyblogApplication using Java 1.8.0_60 on DESKTOP-VI456TF with PID 696 (D:\Code\Pobject\study\myblog\target\classes started by Wangchenglong in D:\Code\Pobject\study\myblog)
+2022-03-04 10:26:54.457 [ restartedMain ] - [ DEBUG ] [ com.wangcl.myblog.MyblogApplication : 56 ] - Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-03-04 10:26:54.457 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 641 ] - The following profiles are active: dev
+2022-03-04 10:26:55.097 [ restartedMain ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 109 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-03-04 10:26:55.099 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\ArticleMapper.class]
+2022-03-04 10:26:55.099 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [D:\Code\Pobject\study\myblog\target\classes\com\wangcl\myblog\mapper\UserMapper.class]
+2022-03-04 10:26:55.100 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'articleMapper' and 'com.wangcl.myblog.mapper.ArticleMapper' mapperInterface
+2022-03-04 10:26:55.100 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'articleMapper'.
+2022-03-04 10:26:55.100 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userMapper' and 'com.wangcl.myblog.mapper.UserMapper' mapperInterface
+2022-03-04 10:26:55.101 [ restartedMain ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2022-03-04 10:26:55.428 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:26:55.429 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-04 10:26:55.429 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-04 10:26:55.482 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-04 10:26:55.540 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2022-03-04 10:26:55.660 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 990 ] - {dataSource-1} inited
+2022-03-04 10:26:55.697 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@25dd793c'
+2022-03-04 10:26:55.807 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\ArticleMapper.xml]'
+2022-03-04 10:26:55.829 [ restartedMain ] - [ DEBUG ] [ c.b.m.e.spring.MybatisSqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [D:\Code\Pobject\study\myblog\target\classes\mapper\UserMapper.xml]'
+2022-03-04 10:26:56.205 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.ArticleController:
+	{GET [/api/article/list/{pageNum}]}: getArticleList(Integer)
+2022-03-04 10:26:56.208 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.LoginController:
+	{POST [/login]}: login(LoginParms)
+2022-03-04 10:26:56.208 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.RegisterController:
+	{POST [/register]}: register(RegisterParms)
+2022-03-04 10:26:56.209 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	c.w.m.c.UserController:
+	{GET [/user/getUserInfo/{id}]}: getUserInfo(String)
+2022-03-04 10:26:56.210 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 295 ] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-03-04 10:26:56.222 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 86 ] - 'beanNameHandlerMapping' {}
+2022-03-04 10:26:56.232 [ restartedMain ] - [ DEBUG ] [ _.s.web.servlet.HandlerMapping.Mappings : 177 ] - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2022-03-04 10:26:56.300 [ restartedMain ] - [ DEBUG ] [ i.n.util.internal.logging.InternalLoggerFactory : 63 ] - Using SLF4J as the default logging framework
+2022-03-04 10:26:56.302 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.AddressResolverGroupProvider : 37 ] - Starting without optional netty's non-blocking DNS resolver library
+2022-03-04 10:26:56.304 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 122 ] - -Dio.netty.eventLoopThreads: 8
+2022-03-04 10:26:56.310 [ restartedMain ] - [ DEBUG ] [ i.l.core.resource.DefaultEventLoopGroupProvider : 231 ] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2022-03-04 10:26:56.323 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 86 ] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-03-04 10:26:56.324 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.InternalThreadLocalMap : 89 ] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-03-04 10:26:56.327 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 129 ] - -Dio.netty.leakDetection.level: simple
+2022-03-04 10:26:56.327 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetector : 130 ] - -Dio.netty.leakDetection.targetRecords: 4
+2022-03-04 10:26:56.328 [ restartedMain ] - [ DEBUG ] [ io.netty.util.ResourceLeakDetectorFactory : 196 ] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4f60b203
+2022-03-04 10:26:56.332 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 460 ] - -Dio.netty.noUnsafe: false
+2022-03-04 10:26:56.332 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 954 ] - Java version: 8
+2022-03-04 10:26:56.332 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 135 ] - sun.misc.Unsafe.theUnsafe: available
+2022-03-04 10:26:56.332 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 159 ] - sun.misc.Unsafe.copyMemory: available
+2022-03-04 10:26:56.333 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 202 ] - java.nio.Buffer.address: available
+2022-03-04 10:26:56.333 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 272 ] - direct buffer constructor: available
+2022-03-04 10:26:56.333 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 350 ] - java.nio.Bits.unaligned: available, true
+2022-03-04 10:26:56.333 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 424 ] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-03-04 10:26:56.334 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent0 : 446 ] - java.nio.DirectByteBuffer.<init>(long, int): available
+2022-03-04 10:26:56.334 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1116 ] - sun.misc.Unsafe: available
+2022-03-04 10:26:56.334 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1237 ] - -Dio.netty.tmpdir: C:\Users\WANGCH~1\AppData\Local\Temp (java.io.tmpdir)
+2022-03-04 10:26:56.334 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1316 ] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-03-04 10:26:56.334 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 1076 ] - Platform: Windows
+2022-03-04 10:26:56.335 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 178 ] - -Dio.netty.maxDirectMemory: 3779067904 bytes
+2022-03-04 10:26:56.335 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 185 ] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-03-04 10:26:56.336 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.CleanerJava6 : 92 ] - java.nio.ByteBuffer.cleaner(): available
+2022-03-04 10:26:56.336 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 205 ] - -Dio.netty.noPreferDirect: false
+2022-03-04 10:26:56.337 [ restartedMain ] - [ DEBUG ] [ io.netty.util.internal.PlatformDependent : 967 ] - org.jctools-core.MpscChunkedArrayQueue: available
+2022-03-04 10:26:56.345 [ restartedMain ] - [ DEBUG ] [ reactor.util.Loggers : 245 ] - Using Slf4j logging framework
+2022-03-04 10:26:56.347 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.event.jfr.EventRecorderHolder : 55 ] - Starting without optional JFR support. JFR unavailable.
+2022-03-04 10:26:56.360 [ restartedMain ] - [ DEBUG ] [ io.lettuce.core.resource.DefaultClientResources : 227 ] - LatencyUtils/HdrUtils are not available, metrics are disabled
+2022-03-04 10:26:56.556 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2022-03-04 10:26:56.582 [ restartedMain ] - [ INFO  ] [ com.wangcl.myblog.MyblogApplication : 61 ] - Started MyblogApplication in 2.513 seconds (JVM running for 3.213)
+2022-03-04 10:27:01.283 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-04 10:27:01.319 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2022-03-04 10:27:01.324 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@251cbb9e] was not registered for synchronization because synchronization is not active
+2022-03-04 10:27:01.438 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@67358c8b] will not be managed by Spring
+2022-03-04 10:27:01.441 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - ==>  Preparing: SELECT COUNT(*) AS total FROM article
+2022-03-04 10:27:01.457 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - ==> Parameters: 
+2022-03-04 10:27:01.473 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ c.w.myblog.mapper.ArticleMapper.selectPage_mpCount : 137 ] - <==      Total: 1
+2022-03-04 10:27:01.478 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - ==>  Preparing: SELECT id,title,content,create_time,update_time,cover_image,category_id,tag_id,weight,comment_counts,readcount,author_id,introduction FROM article LIMIT ?
+2022-03-04 10:27:01.479 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - ==> Parameters: 10(Long)
+2022-03-04 10:27:01.482 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.wangcl.myblog.mapper.ArticleMapper.selectPage : 137 ] - <==      Total: 1
+2022-03-04 10:27:01.483 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@251cbb9e]

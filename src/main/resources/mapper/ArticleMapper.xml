@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wangcl.myblog.mapper.ArticleMapper">
+    <select id="findGroupYear" resultType="java.lang.String">
+        select DATE_FORMAT(create_time, '%Y') as year
+        from article
+        where author_id = #{authorid}
+        GROUP BY DATE_FORMAT(create_time, '%Y')
+    </select>
+    <select id="findArticleByYear" parameterType="java.lang.String" resultType="com.wangcl.myblog.model.entity.Article">
+        select *
+        from article
+        where author_id = #{authorid}
+          and DATE_FORMAT(create_time, '%Y') = #{year}
+    </select>
+</mapper>
